@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} Home Weather App {% endblock %}
+{% block content %}
+
+<div class="jumbotron">
+    <h1 class="display-4">Weather App</h1>
+    <p class="lead">This is a simple web where you can find out what is the weather like in any city</p>
+    <hr class="my-4" />
+    <p>Just type the city you want.</p>
+    <a class="btn brn-primary btn-lg" href="{{ url_for('current') }}">Get started</a>
+</div>
+
+{% endblock %}
